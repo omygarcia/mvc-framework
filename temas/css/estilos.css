@@ -1,0 +1,53 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html,body
+{
+	font-size: 16px;
+}
+
+header
+{
+	background:#c45dec;
+}
+
+nav
+{
+	background: #def;
+	text-align: center;
+	width: 100%;
+}
+
+nav ul li
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+nav a
+{
+	color: white;
+	display: block;
+	font-family: verdana;
+	font-size: 1em;
+	padding: 0.25em;
+}
+
+label
+{
+	font-weight:bold;
+}
+
+input[type="mail"],input[type="password"]
+{
+	border:1px solid #000;
+	border-radius: 0.25em;
+	display: block;
+	font-family: verdana;
+	font-size: 1em;
+	outline: none;
+	padding: 0.25em;
+}
