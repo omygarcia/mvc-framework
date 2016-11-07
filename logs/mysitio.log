@@ -1,0 +1,20 @@
+
+2016/09/28 09:39:41	Logger::CRITICAL	la variable foo no esta evaluada	foo module
+2016/09/28 09:40:31	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 09:54:10	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 09:54:10	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 09:54:13	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 10:06:32	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 10:06:32	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 10:06:36	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 10:06:38	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 10:09:30	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 10:09:32	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 10:09:34	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 10:09:34	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 10:09:49	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 10:09:49	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 10:09:53	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/09/28 10:09:53	Logger::INFO	El valor de la variable foo es: Mi comida	
+2016/10/05 05:17:28	Logger::CRITICAL	Intentos de inicio de session: 5 Agente: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 Correo: pepe@hotmail.com	Modulo: Login
+2016/10/05 05:18:46	Logger::CRITICAL	Intentos de inicio de session: 6 Agente: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 Correo: pepe@hotmail.com	Modulo: Login

@@ -4,6 +4,7 @@ class Helper
 {
 	public static function getCaptcha($aleatorio)
 	{
+		
 		//Crea una imagen
 		$imagen = imagecreate(120, 35);
 		//Color de la imagen
@@ -36,8 +37,6 @@ class Helper
 		header("Content-type:image/png");
 		imagepng($imagen);
 	}
-
-
 
 	public static function randomText($length) 
 	{ 

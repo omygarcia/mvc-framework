@@ -1,3 +1,3 @@
 <header>
-	<h2>APP</h2>
+	<h2><?=$titulo;?></h2>
 </header>

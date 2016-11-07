@@ -4,19 +4,45 @@
 	padding: 0;
 }
 
+@font-face {
+   	font-family: 'QikkiRegRegular';
+   	src: url('../fonst/qarmi/Qarmic_sans_Abridged-webfont.eot');
+    src: url('../fonst/qarmi/Qarmic_sans_Abridged-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonst/qarmi/Qarmic_sans_Abridged-webfont.woff') format('woff'),
+         url('../fonst/qarmi/Qarmic_sans_Abridged-webfont.ttf') format('truetype'),
+         url('../fonst/qarmi/Qarmic_sans_Abridged-webfont.svg#QikkiRegRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family:"chalet";
+	src:url(../fonst/Chalet.ttf) format("truetype");
+	src:url(../fonst/Chalet.eot);
+	src:url(../fonst/Chalet.svg) format("svg");
+	src:url(../fonst/Chalet.woff) format("woff");
+}
+
 html,body
 {
 	font-size: 16px;
+	background:#FBFCFC;
 }
 
 header
 {
-	background:#c45dec;
+	background: #2471A3;/*#c45dec;*/
+}
+
+h1
+{
+	/**/
+	font-family: "chalet","QikkiRegRegular",verdana;
 }
 
 nav
 {
-	background: #def;
+	background: #273746;/*#def;*/
 	text-align: center;
 	width: 100%;
 }
@@ -25,6 +51,7 @@ nav ul li
 {
 	display: inline-block;
 	vertical-align: top;
+	list-style:none;
 }
 
 nav a
@@ -33,7 +60,24 @@ nav a
 	display: block;
 	font-family: verdana;
 	font-size: 1em;
-	padding: 0.25em;
+	padding: 0.5em;
+	width:7em;
+	text-decoration:none;
+	-webkit-transition:all 0.5s ease-in;
+	-moz-transition:all 0.5s ease-in;
+	-o-transition:all 0.5s ease-in;
+	-ms-transition:all 0.5s ease-in;
+	-webkit-transition:all 0.5s ease-in;
+}
+
+nav a:hover
+{
+	background:#F4D03F;
+	-webkit-transition:all 0.5s ease-out;
+	-moz-transition:all 0.5s ease-out;
+	-o-transition:all 0.5s ease-out;
+	-ms-transition:all 0.5s ease-out;
+	-webkit-transition:all 0.5s ease-out;
 }
 
 label
@@ -41,7 +85,23 @@ label
 	font-weight:bold;
 }
 
-input[type="mail"],input[type="password"]
+legend
+{
+	color: #f90;
+	font-size: 1.2em;
+}
+
+fieldset
+{
+	border: 2px solid #f90;
+	border-radius: 0.25em;
+	padding: 0.5em;
+	text-align: left;
+	margin: 0 auto;
+	width: 60%;
+}
+
+input[type="text"],input[type="mail"],input[type="password"],input[type="date"],select,textarea
 {
 	border:1px solid #000;
 	border-radius: 0.25em;
@@ -51,3 +111,126 @@ input[type="mail"],input[type="password"]
 	outline: none;
 	padding: 0.25em;
 }
+
+textarea
+{
+	resize: none;
+	height: 7em;
+}
+
+input[type="submit"]
+{
+	background:#F4D03F;
+	border:0;
+	border-radius:0.25em;
+	color:#fff;
+	cursor:pointer;
+	font-family:verdana;
+	font-size:1em;
+	outline:none;
+	padding:0.5em;
+	-webkit-transition:all 0.5s ease-in;
+	-moz-transition:all 0.5s ease-in;
+	-o-transition:all 0.5s ease-in;
+	-ms-transition:all 0.5s ease-in;
+	-webkit-transition:all 0.5s ease-in;
+}
+
+input[type="submit"]:hover
+{
+	background:#F5B041;
+	-webkit-transition:all 0.5s ease-out;
+	-moz-transition:all 0.5s ease-out;
+	-o-transition:all 0.5s ease-out;
+	-ms-transition:all 0.5s ease-out;
+	-webkit-transition:all 0.5s ease-out;
+}
+
+#sub_menu_ingresar
+{
+	border-radius: 0.25em;
+	background: #273746;
+	display: none;
+	color: white;
+	padding: 0.25em;
+	position: absolute;
+	width: 17em;
+	z-index: 100;
+}
+
+#sub_menu_ingresar fieldset
+{
+	width: 90%;
+}
+
+.link
+{
+	background: none !important;
+	color: white;
+	margin: 0 auto;
+	text-decoration: none;
+	width: 90%;
+}
+
+.link:hover
+{
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.5) !important;
+}
+
+#loader
+{
+	display:none;
+}
+
+.error
+{
+	background: #E5B3A6;
+	border: 1px dashed #DA300C;
+	border-radius: 0.25em;
+	color: #DA300C;
+	font-family: verdana;
+	font-size: 1em;
+	padding: 0.25em;
+}
+
+.ok
+{
+	background: #B0DA88;
+	border: 1px dashed #44810A;
+	border-radius: 0.25em;
+	color: #44810A;	
+	font-family: verdana;
+	font-size: 1em;
+	padding: 0.25em;
+}
+
+.btn-facebook
+{
+	background:#3F5892 !important;
+	border-radius:0.25em;
+	color:white;
+	padding: 0.25em;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.btn-facebook:hover
+{
+	background: #3870A0 !important;
+}
+
+.btn-google
+{
+	background:#E65139 !important;
+	border-radius:0.25em;
+	color:white;
+	padding: 0.25em;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.btn-google:hover
+{
+	background: #E74026 !important;
+}
+

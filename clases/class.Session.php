@@ -50,13 +50,13 @@ class Session
 				if($result->num_rows > 0)
 				{
 					$row = $result->fetch_array();
-					echo $row["id_session"];
-					echo "tu session continua vigente";
+					//echo $row["id_session"];
+					//echo "tu session continua vigente";
 					$this->logged_in = true;
 				}
 				else
 				{
-					echo "destruyendo session por que y pasaron 10 minutos";
+					//echo "destruyendo session por que y pasaron 10 minutos";
 					//Eliminar de la base de datos -- 
 					$consulta = "DELETE FROM tb_session 
 					WHERE ascii_session_id='$this->php_session_id' OR (now() - created) > $this->session_lifespan";
@@ -75,11 +75,20 @@ class Session
 			}
 		}
 
-		echo "<br />id_usuario".$this->id_usuario."<br/>";
+		//echo "<br />id_usuario".$this->id_usuario."<br/>";
 		//asignamos el tiempo de vida para la session
 		session_set_cookie_params($this->session_lifespan);
 		//inicializamos la session
 		session_start();
+		/*
+		//otra configuracion
+		session_start([
+				"use_strict_mode" => true,
+				"use_cookies" => true,
+				"cookie_httponly" => true, //evita el acceso a cookies mediante lenguajes script como javascript
+				"hash_function" => 5 //sha256
+			]);
+		*/
 		/*$this->conn->close();
 		$this->conn = null;*/
 	}
@@ -92,7 +101,7 @@ class Session
 			$this->conn->query($consulta);
 			if($this->conn->affected_rows >0)
 			{
-				echo "impresion";
+				//echo "impresion";
 			}
 		}
 	}
@@ -120,10 +129,10 @@ class Session
 				WHERE ascii_session_id='$this->php_session_id'";
 				if($this->conn->query($consulta))
 				{
-					echo "consulta";
+					//echo "consulta";
 					if($this->conn->affected_rows > 0)
 					{
-						echo "Todo Ok";
+						//echo "Todo Ok";
 					}
 					else
 					{
@@ -196,13 +205,13 @@ class Session
 
 	private function _session_open_method($save_path,$session_name)
 	{
-		echo $save_path." ".$session_name;
+		//echo $save_path." ".$session_name;
 		return true;
 	}
 
 	public function _session_close_method()
 	{
-		echo "close";
+		//echo "close";
 		$this->conn->close();
 		$this->conn = null;
 		return true;
@@ -210,7 +219,7 @@ class Session
 
 	public function _session_read_method($id)
 	{
-		echo "read ($id)\n";
+		//echo "read ($id)\n";
 		$strUserAgent = $_SERVER['HTTP_USER_AGENT'];
 		$this->php_session_id = $id;
 		$failed = 1;
@@ -251,7 +260,7 @@ class Session
 
 	public function _session_write_method($id,$ses_data)
 	{
-		echo "write ($id, $ses_data)\n";
+		//echo "write ($id, $ses_data)\n";
 		return true;
 	}
 
