@@ -1,13 +1,13 @@
 <?php
 
 //configurando url principal
-define("BASE_URL", "http://127.0.0.1:8080/security_php/");
+define("BASE_URL", "");
 
 //Configuracion de la base de datos
-define("SERVER", "127.0.0.1");
-define("USER", "root");
+define("SERVER", "");
+define("USER", "");
 define("PW", "");
-define("DB", "pruebas_php6");
+define("DB", "");
 
 //sessiones
 define("SESSION_TIMEOUT", 600);//10 minutos y la session se cerrara
@@ -21,8 +21,8 @@ define("PAYPAL_SECRET_KEY", "");
 define("MODE_PAYPAL", ""); // sandbox ó live
 
 //Facebook
-define("FACEBOOK_API_KEY", "404790399648658");
-define("FACEBOOK_SECRET_KEY", "851cca60826761e81690939207d3492a");
+define("FACEBOOK_API_KEY", "");
+define("FACEBOOK_SECRET_KEY", "");
 
 //Twitter
 define("TWITTER_API_KEY", "");
